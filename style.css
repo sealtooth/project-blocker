@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#add-domain {
+    display: flex; /* Arrange elements horizontally */
+    justify-content: center; /* Center elements within the form */
+    align-items: center; /* Align elements vertically */
+    margin-bottom: 10px; /* Add some spacing below the form */
+}
+
+#user-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Add spacing between input and button */
+}
+
+#submit {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color for the button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Indicate clickable action */
+}
+
+#show-list,
+#clear-list {
+    display: inline-block;  /* Make them display inline next to each other */
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Other buttons can have similar styling with adjustments */
+
+#show-list {  /* Specific styles for show list button */
+    background-color: #adadad;  /* Adjust color if needed */
+}
+#clear-list {  /* Specific styles for clear favorites button */
+    background-color: #fea5a5;  /* Adjust color if needed */
+}
+
+#clear-message {
+    display: none; /* Initially hide the message */
+    opacity: 0; /* Start with 0 opacity (invisible) */
+    transition: opacity 0.5s ease-in-out; /* Transition for opacity over 0.5 seconds */
+}
+
+#clear-message.show { /* Add a new class for the "show" state */
+    display: block; /* Make it visible */
+    opacity: 1; /* Full opacity (visible) */
+}
+
+#list-container {
+    display: none; /* Initially hide the message */
+    opacity: 0; /* Start with 0 opacity (invisible) */
+    transition: opacity 0.5s ease-in-out; /* Transition for opacity over 0.5 seconds */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style: none; /* Remove default bullet points */
+}
+
+#list-container.show {
+    display: block; /* Make it visible */
+    opacity: 1; /* Full opacity (visible) */
+}
+
+#list-container li {
+    margin-bottom: 5px; /* Add spacing between list items */
+    padding: 5px 10px; /* Add padding for better readability */
+    border: 1px solid #ddd; /* Optional: Add a subtle border to each item */
+    border-radius: 4px; /* Optional: Add rounded corners for a softer look */
+    cursor: pointer; /* Indicate clickable action (if applicable) */
+}
+
+/* blocked.html */
+
+#main-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#main-message {
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+#second-message {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
